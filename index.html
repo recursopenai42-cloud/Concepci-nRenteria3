@@ -94,15 +94,31 @@
             display: inline-block;
         }
 
+        .dropdown > a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .dropdown > a:hover {
+            background-color: #ffcc00;
+            color: #002244;
+        }
+
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #003366;
             min-width: 220px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
+            z-index: 100;
             border-radius: 8px;
-            top: 30px;
+            top: 35px;
+            left: 0;
         }
 
         .dropdown-content a {
@@ -110,6 +126,7 @@
             padding: 0.6rem 1rem;
             color: white;
             text-align: left;
+            border-radius: 0;
         }
 
         .dropdown-content a:hover {
@@ -255,7 +272,6 @@
             font-size: 0.85rem;
         }
 
-        /* Estilos para la página de aplicación */
         .app-section {
             margin-bottom: 2.5rem;
         }
@@ -266,13 +282,6 @@
             margin-top: 0;
             border-left: 4px solid #ffcc00;
             padding-left: 0.8rem;
-        }
-
-        .app-section .highlight {
-            background: #f0f7ff;
-            padding: 1rem;
-            border-radius: 12px;
-            border-left: 4px solid #0055aa;
         }
 
         .pros-cons {
@@ -342,18 +351,18 @@
 </div>
 
 <div class="nav">
-    <a data-page="inicio" class="active">Inicio</a>
+    <a data-page="inicio" class="active" onclick="showPage('inicio')">Inicio</a>
     <div class="dropdown">
         <a>Modelos de evaluación y RED ▼</a>
         <div class="dropdown-content">
-            <a data-page="modelos">Modelos de evaluación</a>
-            <a data-page="seleccionando">Seleccionando modelos</a>
-            <a data-page="recursos">Recursos educativos digitales</a>
+            <a data-page="modelos" onclick="showPage('modelos')">Modelos de evaluación</a>
+            <a data-page="seleccionando" onclick="showPage('seleccionando')">Seleccionando modelos</a>
+            <a data-page="recursos" onclick="showPage('recursos')">Recursos educativos digitales</a>
         </div>
     </div>
-    <a data-page="rediseno">Rediseño</a>
-    <a data-page="aplicacion">Aplicación de modelo</a>
-    <a data-page="referencias">Referencias</a>
+    <a data-page="rediseno" onclick="showPage('rediseno')">Rediseño</a>
+    <a data-page="aplicacion" onclick="showPage('aplicacion')">Aplicación de modelo</a>
+    <a data-page="referencias" onclick="showPage('referencias')">Referencias</a>
 </div>
 
 <div class="container">
@@ -705,7 +714,204 @@
                     <tr><td>Capacidad para generar aprendizaje</td><td>4</td><td>5</td></tr>
                     <tr><td>Interactividad y adaptabilidad</td><td>4</td><td>4</td></tr>
                     <tr><td>Motivación</td><td>5</td><td>4</td></tr>
-                    <tr><td
+                    <tr><td>Diseño y presentación</td><td>4</td><td>4</td></tr>
+                    <tr><td>Usabilidad</td><td>5</td><td>4</td></tr>
+                    <tr><td>Accesibilidad</td><td>3</td><td>3</td></tr>
+                    <tr><td>Reusabilidad</td><td>4</td><td>4</td></tr>
+                    <tr><td>Interoperabilidad</td><td>3</td><td>3</td></tr>
+                    <tr><td><strong>Total</strong></td><td><strong>40/50</strong></td><td><strong>39/50</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h4>Análisis de resultados con CODA</h4>
+            <p>En el caso de <strong>"Juegos de multiplicar - Tablas de multiplicar"</strong>, el modelo CODA evidencia que se trata de un recurso con alta capacidad motivadora, buena usabilidad y adecuada coherencia con el objetivo de reforzar el aprendizaje de las tablas de multiplicar. Su diseño es atractivo para los estudiantes de primaria, favorece la práctica autónoma y ofrece una interacción sencilla; sin embargo, presenta limitaciones en accesibilidad e interoperabilidad, ya que no incluye adaptaciones específicas para estudiantes con necesidades diversas ni opciones amplias de integración con otras plataformas.</p>
+            <p>Respecto al RED <strong>"Fracciones equivalentes"</strong>, se observa una valoración igualmente alta. Su principal fortaleza radica en la capacidad para generar aprendizaje, debido a que presenta el contenido mediante representaciones visuales que favorecen la comprensión del concepto de equivalencia de fracciones. También muestra un buen nivel de interactividad y reusabilidad. No obstante, al igual que el RED anterior, presenta limitaciones en accesibilidad y en posibilidades de interoperabilidad.</p>
+            <p>En términos comparativos, CODA muestra que ambos recursos son pertinentes para el contexto escolar; sin embargo, <strong>Mundo Primaria</strong> obtiene una ligera ventaja por su motivación y facilidad de uso, mientras <strong>Árbol ABC</strong> sobresale por su potencial conceptual y visual.</p>
+        </div>
+
+        <!-- 2. Aplicación del modelo LORI -->
+        <div class="card app-section">
+            <h3>2. Aplicación del modelo LORI</h3>
+            <p>El modelo LORI permite evaluar objetos de aprendizaje a partir de criterios relacionados con la calidad del contenido, la presentación, la interacción, la motivación y la accesibilidad. Para esta evaluación también se utilizó una escala de <strong>1 a 5</strong>.</p>
+
+            <h4>Tabla 2. Evaluación de los RED con el modelo LORI</h4>
+            <table>
+                <thead><tr><th>Criterio LORI</th><th>Juegos de multiplicar - Mundo Primaria</th><th>Fracciones equivalentes - Árbol ABC</th></tr></thead>
+                <tbody>
+                    <tr><td>Calidad del contenido</td><td>4</td><td>4</td></tr>
+                    <tr><td>Alineación con los objetivos de aprendizaje</td><td>4</td><td>4</td></tr>
+                    <tr><td>Retroalimentación y adaptación</td><td>4</td><td>4</td></tr>
+                    <tr><td>Motivación</td><td>5</td><td>4</td></tr>
+                    <tr><td>Diseño de presentación</td><td>4</td><td>4</td></tr>
+                    <tr><td>Interacción y usabilidad</td><td>5</td><td>4</td></tr>
+                    <tr><td>Accesibilidad</td><td>3</td><td>3</td></tr>
+                    <tr><td>Reusabilidad</td><td>4</td><td>4</td></tr>
+                    <tr><td>Cumplimiento de estándares</td><td>4</td><td>4</td></tr>
+                    <tr><td><strong>Promedio</strong></td><td><strong>4,1/5</strong></td><td><strong>3,9/5</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h4>Análisis de resultados con LORI</h4>
+            <p>La aplicación de LORI al recurso <strong>"Juegos de multiplicar - Tablas de multiplicar"</strong> permite reconocer que su principal fortaleza es la motivación. El formato lúdico, el dinamismo y la sencillez del entorno facilitan el trabajo autónomo y la participación activa de los estudiantes. Asimismo, la interacción y la usabilidad son altas, ya que el estudiante comprende con facilidad lo que debe hacer y puede avanzar sin dificultad. No obstante, el recurso no presenta altos niveles de accesibilidad ni retroalimentación suficientemente personalizada.</p>
+            <p>En cuanto al RED <strong>"Fracciones equivalentes"</strong>, el modelo LORI muestra una valoración positiva en la calidad del contenido, la alineación con los objetivos y la reusabilidad. El recurso es adecuado para trabajar la comprensión visual de fracciones equivalentes, aspecto que resulta fundamental en el aprendizaje matemático de cuarto grado. Su principal fortaleza es el apoyo visual, aunque su nivel de motivación es ligeramente menor en comparación con el recurso de Mundo Primaria, debido a que se centra más en la explicación conceptual que en la dinámica de juego.</p>
+            <p>En conjunto, LORI evidencia que ambos RED tienen valor pedagógico y pueden emplearse en el aula; sin embargo, su efectividad mejora considerablemente cuando el docente acompaña la actividad con orientaciones, preguntas y ejercicios complementarios.</p>
+        </div>
+
+        <!-- 3. Aplicación del modelo MERLOT -->
+        <div class="card app-section">
+            <h3>3. Aplicación del modelo MERLOT</h3>
+            <p>El modelo MERLOT evalúa los recursos mediante tres dimensiones principales: <strong>calidad del contenido</strong>, <strong>efectividad como herramienta de enseñanza y aprendizaje</strong> y <strong>facilidad de uso</strong>. Se utilizó igualmente una escala de <strong>1 a 5</strong>.</p>
+
+            <h4>Tabla 3. Evaluación de los RED con el modelo MERLOT</h4>
+            <table>
+                <thead><tr><th>Criterio MERLOT</th><th>Juegos de multiplicar - Mundo Primaria</th><th>Fracciones equivalentes - Árbol ABC</th></tr></thead>
+                <tbody>
+                    <tr><td>Calidad del contenido</td><td>4</td><td>4</td></tr>
+                    <tr><td>Efectividad potencial como herramienta de enseñanza</td><td>5</td><td>4</td></tr>
+                    <tr><td>Facilidad de uso</td><td>5</td><td>4</td></tr>
+                    <tr><td><strong>Promedio</strong></td><td><strong>4,7/5</strong></td><td><strong>4,0/5</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h4>Análisis de resultados con MERLOT</h4>
+            <p>Con este modelo, el recurso <strong>"Juegos de multiplicar - Tablas de multiplicar"</strong> obtiene una valoración sobresaliente, especialmente en la efectividad potencial como herramienta de enseñanza y en la facilidad de uso. Esto se debe a que el recurso permite reforzar un contenido matemático básico de manera práctica, rápida y entretenida. Además, su navegación es intuitiva, lo que favorece su implementación en el aula o en actividades de refuerzo en casa.</p>
+            <p>Por su parte, el recurso <strong>"Fracciones equivalentes"</strong> también presenta resultados favorables. Su calidad de contenido es adecuada y su potencial didáctico es claro, especialmente por el uso de imágenes y representaciones visuales. Sin embargo, en comparación con el recurso anterior, su facilidad de uso puede requerir una mediación más cercana del docente, sobre todo cuando los estudiantes aún no dominan el concepto de fracción.</p>
+            <p>MERLOT permite concluir que ambos recursos son viables como herramientas de enseñanza, pero el recurso de <strong>Mundo Primaria</strong> presenta una mayor facilidad de incorporación inmediata al aula, mientras que el de <strong>Árbol ABC</strong> requiere una mejor contextualización didáctica para aprovechar plenamente su valor conceptual.</p>
+        </div>
+
+        <!-- 4. Comparación general de resultados -->
+        <div class="card app-section">
+            <h3>4. Comparación general de resultados</h3>
+            <p>La evaluación realizada con los tres modelos muestra que los dos RED seleccionados son pertinentes para apoyar el aprendizaje de las Matemáticas en grado cuarto; sin embargo, sus fortalezas responden a necesidades diferentes.</p>
+            <p><strong>"Juegos de multiplicar - Tablas de multiplicar"</strong> se destaca por su carácter lúdico, motivador y fácil de usar. Es especialmente útil para el refuerzo y la práctica de las tablas de multiplicar, ya que promueve participación, repetición significativa y trabajo autónomo.</p>
+            <p><strong>"Fracciones equivalentes"</strong> se destaca por su valor conceptual y visual, porque facilita la comprensión de un contenido que suele resultar abstracto para los estudiantes. Su mayor potencial está en el fortalecimiento de la comprensión matemática y no tanto en la dinámica de juego.</p>
+            <p>Desde la perspectiva de los tres modelos aplicados, puede afirmarse que:</p>
+            <ul>
+                <li><strong>CODA</strong> ofrece una valoración más completa, porque integra criterios pedagógicos y tecnológicos.</li>
+                <li><strong>LORI</strong> permite una comparación clara entre los recursos, al centrarse en calidad, motivación, diseño, interacción y accesibilidad.</li>
+                <li><strong>MERLOT</strong> resulta más práctico y sintético, útil para una valoración rápida del potencial educativo del recurso.</li>
+            </ul>
+        </div>
+
+        <!-- 5. Pro y contras de los modelos aplicados -->
+        <div class="card app-section">
+            <h3>5. Pro y contras de los modelos aplicados</h3>
+
+            <h4>Modelo CODA</h4>
+            <div class="pros-cons">
+                <div class="pro">
+                    <strong>✅ Ventajas:</strong>
+                    <p>Permite una evaluación integral del RED, pues valora objetivos, contenidos, motivación, diseño, usabilidad, accesibilidad, reusabilidad e interoperabilidad. Resulta muy útil para seleccionar recursos con una mirada amplia.</p>
+                </div>
+                <div class="con">
+                    <strong>❌ Desventajas:</strong>
+                    <p>Su aplicación puede resultar extensa y demandar más tiempo, especialmente cuando el docente necesita revisar varios recursos.</p>
+                </div>
+            </div>
+
+            <h4>Modelo LORI</h4>
+            <div class="pros-cons">
+                <div class="pro">
+                    <strong>✅ Ventajas:</strong>
+                    <p>Facilita la comparación entre recursos educativos digitales y permite valorar dimensiones clave del aprendizaje, como la calidad del contenido, la motivación, la interacción y la accesibilidad.</p>
+                </div>
+                <div class="con">
+                    <strong>❌ Desventajas:</strong>
+                    <p>Algunos criterios pueden depender en gran medida de la interpretación del evaluador, por lo que se recomienda complementar con observaciones cualitativas.</p>
+                </div>
+            </div>
+
+            <h4>Modelo MERLOT</h4>
+            <div class="pros-cons">
+                <div class="pro">
+                    <strong>✅ Ventajas:</strong>
+                    <p>Es sencillo, práctico y fácil de aplicar. Permite identificar con rapidez si un recurso tiene calidad de contenido, utilidad pedagógica y facilidad de uso.</p>
+                </div>
+                <div class="con">
+                    <strong>❌ Desventajas:</strong>
+                    <p>Es menos detallado que CODA y LORI, por lo que puede dejar por fuera aspectos importantes como accesibilidad, adaptabilidad o interoperabilidad.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Modelo más pertinente para adaptar al contexto -->
+        <div class="card app-section">
+            <h3>6. Modelo más pertinente para adaptar al contexto</h3>
+            <p>Después de aplicar los tres modelos, se considera que el <strong>modelo CODA</strong> es el más pertinente para adaptar al contexto educativo propio. Esta elección se justifica porque permite valorar de manera equilibrada los aspectos pedagógicos y tecnológicos de un recurso educativo digital, lo cual es fundamental en la selección de materiales para Matemáticas en educación básica primaria.</p>
+            <p>Además, CODA puede ajustarse mejor a las condiciones reales del aula, porque admite incorporar observaciones relacionadas con conectividad, claridad del lenguaje, inclusión, pertinencia curricular y posibilidad de complementar el recurso con actividades impresas o manipulativas. Por ello, se propone adaptar este modelo mediante una matriz simplificada que conserve sus criterios centrales y facilite su aplicación por parte del docente.</p>
+        </div>
+
+        <!-- 7. Conclusión de la evaluación aplicada -->
+        <div class="card app-section">
+            <h3>7. Conclusión de la evaluación aplicada</h3>
+            <p>La evaluación con los modelos <strong>CODA, LORI y MERLOT</strong> permitió evidenciar que los dos recursos educativos digitales seleccionados poseen valor pedagógico y pueden fortalecer el aprendizaje de las Matemáticas en grado cuarto. No obstante, también se confirma que ningún recurso, por sí solo, garantiza el aprendizaje; su efectividad depende de la mediación docente, de la articulación con los objetivos de clase y de la adecuación al contexto.</p>
+            <p>En consecuencia, la aplicación de modelos de evaluación no solo permite escoger mejores recursos, sino también reflexionar sobre su uso, adaptarlos y convertirlos en herramientas más pertinentes para la enseñanza y el aprendizaje.</p>
+        </div>
+    </div>
+
+    <!-- Página 5: Referencias -->
+    <div id="referencias" class="page">
+        <h1>📚 Referencias</h1>
+        <div class="card">
+            <ul>
+                <li>Fernández-Pampillón Cesteros, A. M., Domínguez Romero, E., & Armas Ranero, I. (2012). <em>CODA V 1.1</em>. Universidad Complutense de Madrid.</li>
+                <li>Nesbit, J., Belfer, K., & Leacock, T. (2009). <em>Learning Object Review Instrument (LORI)</em>. E-Learning Research and Assessment Network.</li>
+                <li>Mundo Primaria. (s.f.). <em>Juegos de matemáticas para niños de Primaria</em>. Recuperado de https://www.mundoprimaria.com/juegos-matematicas</li>
+                <li>Árbol ABC. (s.f.). <em>Juegos educativos y didácticos para niños</em>. Recuperado de https://arbolabc.com</li>
+                <li>Ministerio de Educación Nacional de Colombia. (2012). <em>Recursos Educativos Digitales Abiertos</em>. Colombia Aprende.</li>
+                <li>Pinto, M., Gómez, C., & Fernández, A. (2012). Los recursos educativos electrónicos: perspectivas y herramientas de evaluación. <em>Perspectivas em Ciência da Informação, 17</em>(3), 82-99.</li>
+                <li>Marzal, M. Á., Calzada Prado, J., & Ruvalcaba Burgoa, E. (2015). Objetos de aprendizaje como recursos educativos en programas de alfabetización en información. <em>Investigación Bibliotecológica, 29</em>(66), 139-168.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Portafolio digital - Evaluación de Recursos Educativos Digitales | Concepción Renteria Renteria | Universidad de Santander (UDES) | 2026</p>
+    <p>Área: Matemáticas | Grado: 4° de primaria</p>
+</div>
+
+<script>
+    function showPage(pageId) {
+        // Ocultar todas las páginas
+        document.querySelectorAll('.page').forEach(function(page) {
+            page.classList.remove('active-page');
+        });
+        
+        // Mostrar la página seleccionada
+        var targetPage = document.getElementById(pageId);
+        if (targetPage) {
+            targetPage.classList.add('active-page');
+        }
+        
+        // Actualizar la navegación (quitar active de todos)
+        document.querySelectorAll('.nav a, .dropdown-content a').forEach(function(link) {
+            link.classList.remove('active');
+        });
+        
+        // Marcar como active el enlace correspondiente (solo para enlaces directos, no dropdown padre)
+        document.querySelectorAll('.nav a[data-page], .dropdown-content a[data-page]').forEach(function(link) {
+            if (link.getAttribute('data-page') === pageId) {
+                link.classList.add('active');
+            }
+        });
+        
+        // Scroll al inicio
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Asignar evento click a todos los enlaces con data-page (por si no usan onclick)
+    document.querySelectorAll('[data-page]').forEach(function(el) {
+        if (!el.getAttribute('onclick')) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                var pageId = this.getAttribute('data-page');
+                if (pageId) {
+                    showPage(pageId);
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>
