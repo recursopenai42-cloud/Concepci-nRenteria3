@@ -255,6 +255,46 @@
             font-size: 0.85rem;
         }
 
+        /* Estilos para la página de aplicación */
+        .app-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .app-section h3 {
+            color: #003366;
+            font-size: 1.3rem;
+            margin-top: 0;
+            border-left: 4px solid #ffcc00;
+            padding-left: 0.8rem;
+        }
+
+        .app-section .highlight {
+            background: #f0f7ff;
+            padding: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid #0055aa;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .pros-cons .pro {
+            background: #e8f5e9;
+            padding: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .pros-cons .con {
+            background: #ffebee;
+            padding: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid #c62828;
+        }
+
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
@@ -277,6 +317,9 @@
             .modelo-card {
                 flex-direction: column;
                 align-items: center;
+            }
+            .pros-cons {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -421,6 +464,7 @@
     <!-- Subpágina 2.1: Seleccionando modelos -->
     <div id="seleccionando" class="page">
         <h1>✅ Seleccionando modelos: CODA, LORI y MERLOT</h1>
+        
         <div class="card">
             <h2>📊 Comparativa de modelos seleccionados</h2>
             <table>
@@ -433,7 +477,7 @@
             </table>
             <p><strong>Modelo más pertinente para adaptar:</strong> CODA, incluyendo criterio de <strong>conectividad y pertinencia curricular para matemáticas de 4°.</strong></p>
         </div>
-                       <div class="card">
+
         <!-- ====== VIDEO CORREGIDO ====== -->
         <div class="card" style="padding: 0; overflow: hidden; border: none; box-shadow: none;">
             <div style="
@@ -567,15 +611,15 @@
             </p>
         </div>
     </div>
-                           
-    </div>    <!-- Subpágina 2.2: Recursos Educativos Digitales -->
+
+    <!-- Subpágina 2.2: Recursos Educativos Digitales -->
     <div id="recursos" class="page">
         <h1>📁 Recursos Educativos Digitales seleccionados (Matemáticas - Grado 4°)</h1>
         
         <div class="card red-card">
             <h2>🔢 RED 1: Juegos de multiplicar - Tablas de multiplicar</h2>
             <div class="red-image">
-                <img src="captura-tablas.png" alt="Juegos de matemáticas - Mundo Primaria">
+                <img src="captura-tablas.png" alt="Juegos de matemáticas - Mundo Primaria" onerror="this.src='https://www.mundoprimaria.com/wp-content/themes/mundoprimaria/images/logo-mundoprimaria.png'">
                 <p><em>Imagen del recurso educativo "Juegos de multiplicar" - Mundo Primaria</em></p>
             </div>
             <table>
@@ -596,7 +640,7 @@
         <div class="card red-card">
             <h2>🍕 RED 2: Fracciones equivalentes - Árbol ABC</h2>
             <div class="red-image">
-                <img src="captura-fracciones.png" alt="Árbol ABC - Juegos educativos">
+                <img src="captura-fracciones.png" alt="Árbol ABC - Juegos educativos" onerror="this.src='https://arbolabc.com/sites/default/files/arbolabc_logo.png'">
                 <p><em>Imagen del recurso educativo "Fracciones equivalentes" - Árbol ABC</em></p>
             </div>
             <table>
@@ -639,103 +683,29 @@
 
     <!-- Página 4: Aplicación de modelo de evaluación -->
     <div id="aplicacion" class="page">
-        <h1>📊 Aplicación del modelo CODA adaptado a los RED de Matemáticas</h1>
+        <h1>📊 Aplicación de modelo de evaluación</h1>
+
         <div class="card">
-            <h2>📈 Modelo CODA adaptado (11 criterios)</h2>
+            <h2>Aplicación de los tres modelos de evaluación a los RED seleccionados</h2>
+            <p>Con el propósito de valorar la calidad pedagógica y técnica de los Recursos Educativos Digitales seleccionados, se aplicaron tres modelos de evaluación: <strong>CODA</strong>, <strong>LORI</strong> y <strong>MERLOT</strong>. Los recursos analizados fueron <strong>"Juegos de multiplicar - Tablas de multiplicar"</strong>, de <strong>Mundo Primaria</strong>, y <strong>"Fracciones equivalentes"</strong>, de <strong>Árbol ABC</strong>, ambos dirigidos al fortalecimiento del aprendizaje de las Matemáticas en estudiantes de grado cuarto de primaria.</p>
+            <p>La aplicación de estos modelos permitió identificar fortalezas, limitaciones y posibilidades de uso pedagógico de cada RED, además de establecer cuál de los modelos resulta más pertinente para ser adaptado al contexto educativo propio.</p>
+        </div>
+
+        <!-- 1. Aplicación del modelo CODA -->
+        <div class="card app-section">
+            <h3>1. Aplicación del modelo CODA</h3>
+            <p>El modelo CODA permite valorar la calidad de objetos de aprendizaje mediante criterios pedagógicos y tecnológicos. Para esta actividad se utilizó una escala de <strong>1 a 5</strong>, donde <strong>1</strong> representa un nivel bajo de cumplimiento y <strong>5</strong> un nivel alto.</p>
+
+            <h4>Tabla 1. Evaluación de los RED con el modelo CODA</h4>
             <table>
-                <thead><tr><th>Criterio</th><th>Mundo Primaria</th><th>Árbol ABC</th></tr></thead>
+                <thead><tr><th>Criterio CODA</th><th>Juegos de multiplicar - Mundo Primaria</th><th>Fracciones equivalentes - Árbol ABC</th></tr></thead>
                 <tbody>
-                    <tr><td>1. Objetivos y coherencia didáctica</td><td>5</td><td>5</td></tr>
-                    <tr><td>2. Calidad de los contenidos</td><td>5</td><td>5</td></tr>
-                    <tr><td>3. Capacidad de generar aprendizaje</td><td>5</td><td>5</td></tr>
-                    <tr><td>4. Interactividad y adaptabilidad</td><td>4</td><td>5</td></tr>
-                    <tr><td>5. Motivación</td><td>5</td><td>5</td></tr>
-                    <tr><td>6. Diseño y presentación</td><td>5</td><td>5</td></tr>
-                    <tr><td>7. Usabilidad</td><td>5</td><td>4</td></tr>
-                    <tr><td>8. Accesibilidad</td><td>3</td><td>3</td></tr>
-                    <tr><td>9. Reusabilidad</td><td>4</td><td>4</td></tr>
-                    <tr><td>10. Interoperabilidad</td><td>4</td><td>4</td></tr>
-                    <tr><td><strong>11. Viabilidad en baja conectividad</strong></td><td>4</td><td>4</td></tr>
-                    <tr><td><strong>Total /55</strong></td><td><strong>49</strong></td><td><strong>49</strong></td></tr>
-                </tbody>
-            </table>
-            <p><strong>Conclusión:</strong> Ambos recursos son altamente pertinentes para enseñar matemáticas en 4° de primaria. El modelo CODA adaptado permite integrar la evaluación tecnológica con estrategias pedagógicas para contextos de baja conectividad.</p>
-        </div>
-        
-        <div class="card">
-            <h2>📋 Resultados ampliados del modelo LORI</h2>
-            <p>El modelo LORI evalúa 9 dimensiones. En su aplicación a los dos recursos de matemáticas para grado 4°, se obtuvieron los siguientes resultados:</p>
-            <ul>
-                <li><strong>Calidad del contenido:</strong> Ambos recursos obtienen 5/5, ya que presentan información precisa, actualizada y adecuada al nivel de 4° de primaria.</li>
-                <li><strong>Alineación con objetivos:</strong> 5/5 en ambos, porque los juegos están directamente relacionados con los estándares de multiplicación y fracciones del MEN.</li>
-                <li><strong>Retroalimentación y adaptabilidad:</strong> Mundo Primaria obtiene 4/5 (retroalimentación correcta/incorrecta), mientras que Árbol ABC obtiene 5/5 (retroalimentación visual más explicativa).</li>
-                <li><strong>Motivación:</strong> Ambos obtienen 5/5, ya que el formato gamificado y colorido atrae a los niños de 8-10 años.</li>
-                <li><strong>Diseño de presentación:</strong> Ambos 5/5, interfaces claras y amigables.</li>
-                <li><strong>Interacción y usabilidad:</strong> Mundo Primaria 5/5 (muy intuitivo), Árbol ABC 4/5 (requiere algo de explicación inicial).</li>
-                <li><strong>Accesibilidad:</strong> Ambos 3/5, porque no cuentan con opciones para niños con discapacidad visual o auditiva.</li>
-                <li><strong>Reusabilidad:</strong> Ambos 4/5, los juegos pueden integrarse en diferentes unidades didácticas.</li>
-                <li><strong>Cumplimiento de estándares:</strong> Ambos 4/5, usan estándares web pero no declaran explícitamente licencias.</li>
-            </ul>
-            <p><strong>Promedio LORI:</strong> Mundo Primaria 4.33/5 - Árbol ABC 4.44/5</p>
-        </div>
-
-        <div class="card">
-            <h2>📋 Resultados ampliados del modelo MERLOT</h2>
-            <p>El modelo MERLOT evalúa tres dimensiones principales. A continuación, el análisis detallado:</p>
-            <ul>
-                <li><strong>Calidad del contenido (5/5 en ambos):</strong> Los dos recursos presentan información matemáticamente correcta, actualizada y pertinente para el grado 4°. Mundo Primaria cubre ampliamente las tablas de multiplicar; Árbol ABC aborda las fracciones equivalentes con excelentes representaciones visuales.</li>
-                <li><strong>Efectividad como herramienta de enseñanza (Mundo Primaria 4/5 - Árbol ABC 5/5):</strong> Árbol ABC es más efectivo para la comprensión conceptual de fracciones porque usa múltiples representaciones visuales. Mundo Primaria es muy efectivo para la memorización y práctica de tablas, pero requiere complemento presencial para la comprensión del significado de la multiplicación.</li>
-                <li><strong>Facilidad de uso (Mundo Primaria 5/5 - Árbol ABC 4/5):</strong> Mundo Primaria es extremadamente intuitivo: el niño solo debe hacer clic en la respuesta correcta. Árbol ABC requiere que el niño lea instrucciones y entienda el concepto de "arrastrar y soltar" o "emparejar", lo que puede necesitar explicación previa del docente.</li>
-            </ul>
-            <p><strong>Promedio MERLOT:</strong> Mundo Primaria 4.67/5 - Árbol ABC 4.67/5</p>
-            <p><strong>Conclusión MERLOT:</strong> Ambos recursos son altamente recomendables para matemáticas de 4° de primaria. Mundo Primaria destaca por su facilidad de uso y motivación; Árbol ABC destaca por su efectividad en la enseñanza conceptual de fracciones.</p>
-        </div>
-    </div>
-
-    <!-- Página 5: Referencias -->
-    <div id="referencias" class="page">
-        <h1>📚 Referencias</h1>
-        <div class="card">
-            <ul>
-                <li>Fernández-Pampillón Cesteros, A. M., Domínguez Romero, E., & Armas Ranero, I. (2012). <em>CODA V 1.1</em>. Universidad Complutense de Madrid.</li>
-                <li>Nesbit, J., Belfer, K., & Leacock, T. (2009). <em>Learning Object Review Instrument (LORI)</em>. E-Learning Research and Assessment Network.</li>
-                <li>Mundo Primaria. (s.f.). <em>Juegos de matemáticas para niños de Primaria</em>. Recuperado de https://www.mundoprimaria.com/juegos-matematicas</li>
-                <li>Árbol ABC. (s.f.). <em>Juegos educativos y didácticos para niños</em>. Recuperado de https://arbolabc.com</li>
-                <li>Ministerio de Educación Nacional de Colombia. (2012). <em>Recursos Educativos Digitales Abiertos</em>. Colombia Aprende.</li>
-                <li>Pinto, M., Gómez, C., & Fernández, A. (2012). Los recursos educativos electrónicos: perspectivas y herramientas de evaluación. <em>Perspectivas em Ciência da Informação, 17</em>(3), 82-99.</li>
-                <li>Marzal, M. Á., Calzada Prado, J., & Ruvalcaba Burgoa, E. (2015). Objetos de aprendizaje como recursos educativos en programas de alfabetización en información. <em>Investigación Bibliotecológica, 29</em>(66), 139-168.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <p>Portafolio digital - Evaluación de Recursos Educativos Digitales | Concepción Renteria Renteria | Universidad de Santander (UDES) | 2026</p>
-    <p>Área: Matemáticas | Grado: 4° de primaria</p>
-</div>
-
-<script>
-    function showPage(pageId) {
-        document.querySelectorAll('.page').forEach(page => {
-            page.classList.remove('active-page');
-        });
-        document.getElementById(pageId).classList.add('active-page');
-        
-        document.querySelectorAll('.nav a, .dropdown-content a').forEach(link => {
-            link.classList.remove('active');
-            if(link.getAttribute('data-page') === pageId) {
-                link.classList.add('active');
-            }
-        });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    document.querySelectorAll('[data-page]').forEach(el => {
-        el.addEventListener('click', function(e) {
-            e.preventDefault();
-            showPage(this.getAttribute('data-page'));
-        });
-    });
+                    <tr><td>Objetivos y coherencia didáctica</td><td>4</td><td>4</td></tr>
+                    <tr><td>Calidad de los contenidos</td><td>4</td><td>4</td></tr>
+                    <tr><td>Capacidad para generar aprendizaje</td><td>4</td><td>5</td></tr>
+                    <tr><td>Interactividad y adaptabilidad</td><td>4</td><td>4</td></tr>
+                    <tr><td>Motivación</td><td>5</td><td>4</td></tr>
+                    <tr><td
 </script>
 </body>
 </html>
