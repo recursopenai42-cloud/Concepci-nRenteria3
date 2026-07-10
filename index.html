@@ -669,182 +669,247 @@
     </div>
 
        <!-- Página 3: Rediseño -->
+        <!-- Página 3: Rediseño -->
     <div id="rediseno" class="page">
         <h1>🔄 Rediseño del modelo de evaluación</h1>
 
-        <!-- Introducción -->
-        <div class="card">
-            <h2>Referentes consultados para el rediseño del modelo</h2>
-            <p>El rediseño del modelo se fundamenta en los documentos de consulta propuestos por el curso y en fuentes secundarias relacionadas con evaluación de Recursos Educativos Digitales. CODA se retoma porque ofrece una valoración integrada de criterios didácticos y tecnológicos mediante una escala de 1 a 5, lo cual facilita identificar fortalezas y debilidades de un objeto de aprendizaje (Fernández-Pampillón et al., 2012).</p>
-            <p>LORI aporta criterios orientados a la calidad del contenido, la alineación con objetivos, la retroalimentación, la motivación, el diseño, la interacción, la accesibilidad, la reusabilidad y el cumplimiento de estándares, por lo cual permite realizar una evaluación sistemática y comparable entre recursos (Nesbit et al., 2009). MERLOT resulta útil por su carácter práctico, ya que concentra la valoración en tres aspectos esenciales: calidad del contenido, efectividad potencial como herramienta de enseñanza y facilidad de uso (MERLOT, s.f.).</p>
-            <p>La norma UNE 71362 complementa el análisis porque propone criterios de calidad para materiales educativos digitales, incluyendo aspectos pedagógicos, técnicos, de navegación y accesibilidad, lo cual permite orientar la creación, selección y valoración de RED con mayor objetividad (INTEF, s.f.). Finalmente, EVALUAREED y Reeves amplían la mirada al considerar dimensiones comunicativas, técnicas, pedagógicas y de interacción, necesarias para comprender el recurso digital no solo como contenido, sino como experiencia de aprendizaje mediada por tecnología.</p>
+        <!-- Panel de introducción -->
+        <div class="card" style="background: linear-gradient(135deg, #e6f0ff, #f0f7ff); border: 2px solid #0055aa;">
+            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 4rem;">🎯</div>
+                <div>
+                    <h2 style="border: none; margin: 0; color: #003366;">Modelo EC-RED Matemáticas</h2>
+                    <p style="font-size:1.1rem; color: #004d99; margin: 0.3rem 0;">Evaluación Contextual de Recursos Educativos Digitales para básica primaria</p>
+                    <p style="font-size:0.9rem; color: #555; margin: 0.5rem 0 0 0;">Un modelo práctico para evaluar recursos digitales en Matemáticas de grado 4°</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Validación de instrumentos -->
+        <!-- ¿Por qué un rediseño? -->
         <div class="card">
-            <h2>Validación de los instrumentos aplicados en el entregable anterior</h2>
-            <p>La revisión de los resultados obtenidos con CODA, LORI y MERLOT permite afirmar que los instrumentos aplicados fueron pertinentes para una primera valoración de los RED seleccionados. No obstante, al contrastar sus resultados con las necesidades del contexto, se identifica que cada modelo presenta alcances y límites.</p>
-
-            <table>
-                <thead><tr><th>Modelo aplicado</th><th>Aporte principal</th><th>Limitación identificada para el contexto</th></tr></thead>
-                <tbody>
-                    <tr>
-                        <td><strong>CODA</strong></td>
-                        <td>Integra criterios pedagógicos y tecnológicos; permite revisar objetivos, contenidos, usabilidad, accesibilidad y reusabilidad.</td>
-                        <td>Puede ser extenso y requiere adaptación para educación básica primaria y baja conectividad.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LORI</strong></td>
-                        <td>Facilita la comparación entre objetos de aprendizaje y permite valorar motivación, interacción y accesibilidad.</td>
-                        <td>La puntuación puede depender del evaluador y no incorpora de manera explícita el contexto institucional.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>MERLOT</strong></td>
-                        <td>Permite una revisión rápida y comprensible para el docente, centrada en contenido, efectividad y facilidad de uso.</td>
-                        <td>Es menos detallado para valorar inclusión, accesibilidad, interoperabilidad y mediación didáctica.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>La validación evidencia que no basta con adoptar un modelo de forma literal. Para responder a la práctica docente, especialmente en básica primaria, es necesario adaptar los criterios de evaluación a las características de los estudiantes, al currículo, a la conectividad, a la inclusión y a la manera como el docente media el uso del recurso en el aula.</p>
+            <h2>🤔 ¿Por qué rediseñar un modelo de evaluación?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+                <div style="background: #fff3e0; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #ff6f00;">
+                    <div style="font-size: 1.5rem;">📱</div>
+                    <h4 style="margin: 0.5rem 0; color: #e65100;">No todos los niños tienen internet</h4>
+                    <p style="font-size:0.9rem; margin: 0;">En muchas escuelas, la conexión falla o es muy lenta. Un buen recurso debe poder usarse también sin internet.</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #2e7d32;">
+                    <div style="font-size: 1.5rem;">🧒</div>
+                    <h4 style="margin: 0.5rem 0; color: #1b5e20;">Cada niño aprende diferente</h4>
+                    <p style="font-size:0.9rem; margin: 0;">Hay niños que necesitan ver, otros escuchar, otros tocar. El modelo debe considerar la diversidad.</p>
+                </div>
+                <div style="background: #e3f2fd; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #0d47a1;">
+                    <div style="font-size: 1.5rem;">🎮</div>
+                    <h4 style="margin: 0.5rem 0; color: #0d47a1;">No todo juego es aprendizaje</h4>
+                    <p style="font-size:0.9rem; margin: 0;">Un recurso puede ser divertido, pero ¿realmente ayuda a aprender Matemáticas?</p>
+                </div>
+                <div style="background: #fce4ec; padding: 1.2rem; border-radius: 12px; border-left: 4px solid #c62828;">
+                    <div style="font-size: 1.5rem;">👩‍🏫</div>
+                    <h4 style="margin: 0.5rem 0; color: #b71c1c;">El docente es clave</h4>
+                    <p style="font-size:0.9rem; margin: 0;">El modelo debe ayudar al docente a decidir qué recurso usar y cómo acompañarlo.</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Propuesta de rediseño -->
+        <!-- ¿Qué aprendimos de los modelos anteriores? -->
         <div class="card">
-            <h2>Propuesta de rediseño del modelo de evaluación</h2>
-
-            <h3>4.1 Título del modelo de evaluación</h3>
-            <p style="font-size:1.2rem; font-weight:bold; color:#003366;">Modelo EC-RED Matemáticas: Evaluación Contextual de Recursos Educativos Digitales para básica primaria.</p>
-
-            <h3>4.2 Referentes utilizados</h3>
-            <p>El modelo EC-RED Matemáticas toma como referentes principales a CODA, LORI, MERLOT y UNE 71362. De CODA se conserva la integración entre lo pedagógico y lo tecnológico; de LORI se retoman criterios relacionados con calidad del contenido, interacción, motivación y accesibilidad; de MERLOT se adopta la importancia de valorar la utilidad docente y la facilidad de uso; y de UNE 71362 se incorpora la necesidad de revisar accesibilidad, navegación, calidad didáctica y condiciones técnicas de los materiales educativos digitales.</p>
-
-            <h3>4.3 Problemática que motiva el rediseño</h3>
-            <p>La problemática que motiva el rediseño del modelo se relaciona con la selección y uso de RED en contextos escolares donde la conectividad puede ser limitada, los estudiantes presentan ritmos diversos de aprendizaje y los recursos digitales suelen utilizarse como actividades aisladas, sin una mediación pedagógica suficiente. En Matemáticas de grado cuarto, algunos recursos favorecen la práctica mecánica, pero no siempre garantizan comprensión conceptual, explicación de procedimientos, inclusión o transferencia a situaciones cotidianas.</p>
-            <p>Por esta razón, se requiere un modelo que evalúe no solo si el recurso es atractivo o funcional, sino si contribuye al aprendizaje matemático, si se articula con el currículo, si favorece la retroalimentación, si puede adaptarse a estudiantes con diferentes necesidades y si permite ser complementado con guías impresas, material manipulativo o actividades desconectadas.</p>
+            <h2>📊 ¿Qué aprendimos de CODA, LORI y MERLOT?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+                <div style="background: #e3f2fd; padding: 1.2rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">✅</div>
+                    <h4 style="margin: 0.5rem 0; color: #0d47a1;">CODA</h4>
+                    <p style="font-size:0.85rem; margin: 0;">Nos enseñó a mirar <strong>pedagogía + tecnología</strong> juntos. Muy completo pero un poco extenso.</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 1.2rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">✅</div>
+                    <h4 style="margin: 0.5rem 0; color: #1b5e20;">LORI</h4>
+                    <p style="font-size:0.85rem; margin: 0;">Nos enseñó a <strong>comparar recursos</strong> fácilmente. Ideal para elegir entre varias opciones.</p>
+                </div>
+                <div style="background: #fff3e0; padding: 1.2rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">✅</div>
+                    <h4 style="margin: 0.5rem 0; color: #e65100;">MERLOT</h4>
+                    <p style="font-size:0.85rem; margin: 0;">Nos enseñó a <strong>evaluar rápido</strong>: contenido, efectividad y facilidad de uso.</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Criterios de evaluación -->
-        <div class="card">
-            <h3>4.4 Criterios de evaluación del modelo rediseñado</h3>
-            <p>El modelo EC-RED Matemáticas se organiza en cuatro dimensiones: <strong>pedagógica, técnica, comunicacional y contextual-inclusiva</strong>. Estas dimensiones permiten valorar el recurso de manera integral y tomar decisiones sobre su uso, adaptación o mejora.</p>
-
-            <table>
-                <thead><tr><th>Dimensión</th><th>Criterio</th><th>Descripción</th><th>Peso</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Pedagógica</strong></td><td>Coherencia curricular y objetivos de aprendizaje</td><td>Revisa si el RED responde a aprendizajes matemáticos de grado cuarto y presenta objetivos claros.</td><td>10</td></tr>
-                    <tr><td><strong>Pedagógica</strong></td><td>Exactitud y suficiencia del contenido matemático</td><td>Valora la corrección conceptual, el nivel de profundidad y la pertinencia del contenido.</td><td>10</td></tr>
-                    <tr><td><strong>Pedagógica</strong></td><td>Estrategia didáctica y aprendizaje activo</td><td>Determina si el recurso promueve participación, resolución de problemas y construcción de sentido.</td><td>10</td></tr>
-                    <tr><td><strong>Pedagógica</strong></td><td>Retroalimentación y evaluación formativa</td><td>Analiza si el estudiante recibe información útil para comprender errores y mejorar.</td><td>8</td></tr>
-                    <tr><td><strong>Pedagógica</strong></td><td>Motivación y componente lúdico</td><td>Valora si el recurso despierta interés, reto y participación sostenida.</td><td>8</td></tr>
-                    <tr><td><strong>Comunicacional</strong></td><td>Claridad comunicativa y lenguaje para primaria</td><td>Revisa si instrucciones, mensajes y elementos visuales son comprensibles para niños de primaria.</td><td>8</td></tr>
-                    <tr><td><strong>Técnica</strong></td><td>Usabilidad, navegación e intuición de uso</td><td>Evalúa facilidad de acceso, navegación, interacción y autonomía del estudiante.</td><td>8</td></tr>
-                    <tr><td><strong>Contextual e inclusiva</strong></td><td>Accesibilidad e inclusión</td><td>Considera ajustes para necesidades diversas, legibilidad, contraste, audio, imágenes y apoyos.</td><td>10</td></tr>
-                    <tr><td><strong>Técnica</strong></td><td>Estabilidad técnica y desempeño</td><td>Valora carga, funcionamiento, compatibilidad y continuidad del recurso.</td><td>7</td></tr>
-                    <tr><td><strong>Técnica</strong></td><td>Reusabilidad y adaptabilidad didáctica</td><td>Revisa si puede emplearse en distintas actividades y complementarse con mediaciones docentes.</td><td>7</td></tr>
-                    <tr><td><strong>Contextual e inclusiva</strong></td><td>Viabilidad en baja conectividad</td><td>Determina si puede apoyarse con guías, capturas, material físico o actividades desconectadas.</td><td>7</td></tr>
-                    <tr><td><strong>Técnica</strong></td><td>Seguridad, privacidad y uso responsable</td><td>Considera publicidad, protección de datos, enlaces externos y riesgos de navegación.</td><td>7</td></tr>
-                </tbody>
-            </table>
+        <!-- El modelo EC-RED Matemáticas -->
+        <div class="card" style="background: #f0f7ff; border: 2px solid #0055aa;">
+            <h2>🌟 El modelo EC-RED Matemáticas</h2>
+            <p style="font-size:1.1rem;">Es un modelo <strong>práctico y adaptado</strong> para evaluar recursos digitales de Matemáticas en grado 4°.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0;">
+                <div style="background: #003366; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">📚</div>
+                    <h4 style="margin: 0.3rem 0; color: #ffcc00;">Pedagógica</h4>
+                    <p style="font-size:0.75rem; margin:0;">¿Enseña bien?</p>
+                </div>
+                <div style="background: #004d99; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">💻</div>
+                    <h4 style="margin: 0.3rem 0; color: #ffcc00;">Técnica</h4>
+                    <p style="font-size:0.75rem; margin:0;">¿Funciona bien?</p>
+                </div>
+                <div style="background: #0066cc; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">💬</div>
+                    <h4 style="margin: 0.3rem 0; color: #ffcc00;">Comunicacional</h4>
+                    <p style="font-size:0.75rem; margin:0;">¿Entienden los niños?</p>
+                </div>
+                <div style="background: #0088dd; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">🌍</div>
+                    <h4 style="margin: 0.3rem 0; color: #ffcc00;">Contextual</h4>
+                    <p style="font-size:0.75rem; margin:0;">¿Se adapta al contexto?</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Métrica o escala -->
+        <!-- ¿Qué evalúa el modelo? - Versión práctica -->
         <div class="card">
-            <h3>4.5 Métrica o escala de valoración</h3>
-            <p>El modelo utiliza una escala de <strong>1 a 5</strong> para cada criterio. La puntuación se pondera de acuerdo con el peso asignado, hasta alcanzar un total máximo de <strong>100 puntos</strong>.</p>
-
-            <table>
-                <thead><tr><th>Puntaje</th><th>Nivel de calidad</th><th>Interpretación</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>90 a 100</strong></td><td>Excelente</td><td>El RED puede implementarse con ajustes mínimos y evidencia alta calidad pedagógica, técnica y contextual.</td></tr>
-                    <tr><td><strong>80 a 89</strong></td><td>Alto</td><td>El RED es recomendable, aunque requiere ajustes puntuales antes o durante su implementación.</td></tr>
-                    <tr><td><strong>70 a 79</strong></td><td>Adecuado</td><td>El RED puede usarse con mediación docente fuerte y actividades complementarias.</td></tr>
-                    <tr><td><strong>60 a 69</strong></td><td>Básico</td><td>El RED requiere rediseño didáctico significativo para ser implementado.</td></tr>
-                    <tr><td><strong>Menos de 60</strong></td><td>Insuficiente</td><td>No se recomienda su uso sin modificaciones sustanciales.</td></tr>
-                </tbody>
-            </table>
+            <h2>📋 ¿Qué evalúa el modelo EC-RED Matemáticas?</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div style="background: #e8f5e9; padding: 1rem; border-radius: 12px;">
+                    <strong>📖 Coherencia curricular</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿El recurso enseña lo que el niño debe aprender en 4°?</p>
+                </div>
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 12px;">
+                    <strong>✅ Contenido correcto</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿La información matemática es precisa y suficiente?</p>
+                </div>
+                <div style="background: #fff3e0; padding: 1rem; border-radius: 12px;">
+                    <strong>🎯 Aprendizaje activo</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿El niño piensa, resuelve y construye conocimiento?</p>
+                </div>
+                <div style="background: #fce4ec; padding: 1rem; border-radius: 12px;">
+                    <strong>💬 Retroalimentación</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿Le dice al niño por qué se equivocó y cómo mejorar?</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 1rem; border-radius: 12px;">
+                    <strong>🎮 Motivación</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿El recurso es divertido y mantiene el interés del niño?</p>
+                </div>
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 12px;">
+                    <strong>👶 Lenguaje claro</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿Las instrucciones y mensajes son fáciles de entender?</p>
+                </div>
+                <div style="background: #fff3e0; padding: 1rem; border-radius: 12px;">
+                    <strong>🖱️ Fácil de usar</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿El niño puede usarlo sin ayuda del docente?</p>
+                </div>
+                <div style="background: #fce4ec; padding: 1rem; border-radius: 12px;">
+                    <strong>♿ Accesible</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿Pueden usarlo niños con diferentes necesidades?</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 1rem; border-radius: 12px;">
+                    <strong>📶 Sin internet</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿Se puede usar con guías impresas o actividades sin pantalla?</p>
+                </div>
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 12px;">
+                    <strong>🔒 Seguro</strong>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0 0 0;">¿Tiene publicidad inapropiada o riesgos para los niños?</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Metodología -->
+        <!-- Cómo se califica -->
         <div class="card">
-            <h3>4.6 Metodología de aplicación</h3>
-            <p>La aplicación del modelo EC-RED Matemáticas se realiza mediante <strong>cinco fases</strong>:</p>
-            <ol style="padding-left:1.5rem; margin:0.5rem 0;">
-                <li><strong>Caracterización del RED:</strong> identificación del área, grado, objetivo, plataforma, tipo de recurso y condiciones de acceso.</li>
-                <li><strong>Revisión pedagógica:</strong> análisis de la relación entre el recurso, los objetivos de aprendizaje, el currículo y la estrategia didáctica.</li>
-                <li><strong>Revisión técnica y comunicacional:</strong> valoración de usabilidad, claridad de instrucciones, accesibilidad, estabilidad y riesgos de navegación.</li>
-                <li><strong>Aplicación de la matriz ponderada:</strong> asignación de puntuaciones de 1 a 5, cálculo ponderado y registro de observaciones.</li>
-                <li><strong>Interpretación y plan de mejora:</strong> clasificación del nivel de calidad, identificación de ajustes y definición de mediaciones pedagógicas complementarias.</li>
-            </ol>
+            <h2>📊 ¿Cómo se califica?</h2>
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; margin-top: 1rem;">
+                <div style="background: #1b5e20; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">🌟</div>
+                    <strong>Excelente</strong>
+                    <p style="font-size:0.8rem; margin:0;">90-100</p>
+                </div>
+                <div style="background: #2e7d32; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">👍</div>
+                    <strong>Alto</strong>
+                    <p style="font-size:0.8rem; margin:0;">80-89</p>
+                </div>
+                <div style="background: #f9a825; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">📗</div>
+                    <strong>Adecuado</strong>
+                    <p style="font-size:0.8rem; margin:0;">70-79</p>
+                </div>
+                <div style="background: #ef6c00; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">📘</div>
+                    <strong>Básico</strong>
+                    <p style="font-size:0.8rem; margin:0;">60-69</p>
+                </div>
+                <div style="background: #c62828; color: white; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2rem;">❌</div>
+                    <strong>Insuficiente</strong>
+                    <p style="font-size:0.8rem; margin:0;">-60</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Instrumento del modelo rediseñado -->
+        <!-- Resultados de la aplicación -->
         <div class="card">
-            <h2>Instrumento del modelo rediseñado</h2>
-            <p>A continuación, se presenta el instrumento aplicado a los dos Recursos Educativos Digitales seleccionados. El puntaje ponderado se obtiene multiplicando el valor asignado por el peso del criterio y dividiéndolo entre cinco.</p>
-
-            <table>
-                <thead><tr><th>Criterio</th><th>Peso</th><th>Mundo Primaria</th><th>Árbol ABC</th></tr></thead>
-                <tbody>
-                    <tr><td>Coherencia curricular y objetivos de aprendizaje</td><td>10</td><td>5 / 5 = 10.0</td><td>5 / 5 = 10.0</td></tr>
-                    <tr><td>Exactitud y suficiencia del contenido matemático</td><td>10</td><td>5 / 5 = 10.0</td><td>5 / 5 = 10.0</td></tr>
-                    <tr><td>Estrategia didáctica y aprendizaje activo</td><td>10</td><td>4 / 5 = 8.0</td><td>5 / 5 = 10.0</td></tr>
-                    <tr><td>Retroalimentación y evaluación formativa</td><td>8</td><td>4 / 5 = 6.4</td><td>5 / 5 = 8.0</td></tr>
-                    <tr><td>Motivación y componente lúdico</td><td>8</td><td>5 / 5 = 8.0</td><td>4 / 5 = 6.4</td></tr>
-                    <tr><td>Claridad comunicativa y lenguaje para primaria</td><td>8</td><td>4 / 5 = 6.4</td><td>5 / 5 = 8.0</td></tr>
-                    <tr><td>Usabilidad, navegación e intuición de uso</td><td>8</td><td>5 / 5 = 8.0</td><td>4 / 5 = 6.4</td></tr>
-                    <tr><td>Accesibilidad e inclusión</td><td>10</td><td>3 / 5 = 6.0</td><td>3 / 5 = 6.0</td></tr>
-                    <tr><td>Estabilidad técnica y desempeño</td><td>7</td><td>4 / 5 = 5.6</td><td>4 / 5 = 5.6</td></tr>
-                    <tr><td>Reusabilidad y adaptabilidad didáctica</td><td>7</td><td>4 / 5 = 5.6</td><td>4 / 5 = 5.6</td></tr>
-                    <tr><td>Viabilidad en baja conectividad</td><td>7</td><td>4 / 5 = 5.6</td><td>4 / 5 = 5.6</td></tr>
-                    <tr><td>Seguridad, privacidad y uso responsable</td><td>7</td><td>4 / 5 = 5.6</td><td>4 / 5 = 5.6</td></tr>
-                    <tr><td><strong>Total</strong></td><td><strong>100</strong></td><td><strong>85.2/100</strong></td><td><strong>87.2/100</strong></td></tr>
-                </tbody>
-            </table>
+            <h2>📈 Resultados: ¿Cómo quedaron los recursos evaluados?</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div style="background: #e8f5e9; padding: 1.5rem; border-radius: 16px; border: 2px solid #2e7d32;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="font-size: 2rem;">🎯</div>
+                        <h3 style="margin: 0; color: #1b5e20;">Mundo Primaria</h3>
+                    </div>
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #1b5e20; margin: 0.5rem 0;">85.2/100</div>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0;"><strong>Nivel Alto</strong> ✅</p>
+                    <p style="font-size:0.85rem; margin: 0.5rem 0 0 0;">👍 Excelente para practicar tablas de multiplicar. Muy motivador y fácil de usar.</p>
+                    <p style="font-size:0.85rem; margin: 0.3rem 0 0 0;">⚠️ Falta accesibilidad para niños con discapacidad visual.</p>
+                </div>
+                <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 16px; border: 2px solid #0d47a1;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="font-size: 2rem;">🧩</div>
+                        <h3 style="margin: 0; color: #0d47a1;">Árbol ABC</h3>
+                    </div>
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #0d47a1; margin: 0.5rem 0;">87.2/100</div>
+                    <p style="font-size:0.9rem; margin: 0.3rem 0;"><strong>Nivel Alto</strong> ✅</p>
+                    <p style="font-size:0.85rem; margin: 0.5rem 0 0 0;">👍 Excelente para entender fracciones equivalentes con dibujos y visuales.</p>
+                    <p style="font-size:0.85rem; margin: 0.3rem 0 0 0;">⚠️ Necesita complementarse con actividades manipulativas (pizzas de cartulina).</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Implementación en los RED -->
-        <div class="card">
-            <h2>Implementación del modelo rediseñado en los dos RED</h2>
-
-            <h3>6.1 RED 1: Juegos de multiplicar - Tablas de multiplicar, Mundo Primaria</h3>
-            <p>La aplicación del modelo EC-RED Matemáticas al recurso de Mundo Primaria arroja un resultado de <strong>85,2 sobre 100</strong>, correspondiente a un <strong>nivel alto de calidad</strong>. El recurso presenta fortalezas en coherencia curricular, exactitud del contenido, motivación, usabilidad y facilidad de implementación como estrategia de práctica. Su diseño lúdico favorece el interés de los estudiantes y permite reforzar las tablas de multiplicar mediante ejercicios breves y dinámicos.</p>
-            <p>Sin embargo, el modelo también evidencia aspectos por mejorar. La <strong>accesibilidad</strong> obtiene una valoración básica, debido a la ausencia de apoyos visibles para estudiantes con discapacidad visual o auditiva, opciones de lectura asistida o ajustes de contraste. Además, aunque el recurso es útil para practicar, requiere una <strong>mediación docente</strong> que permita transformar la repetición de respuestas en comprensión matemática, uso de estrategias y resolución de problemas contextualizados.</p>
-
-            <h3>6.2 RED 2: Superhéroes: fracciones equivalentes, Árbol ABC</h3>
-            <p>La aplicación del modelo EC-RED Matemáticas al recurso de Árbol ABC arroja un resultado de <strong>87,2 sobre 100</strong>, correspondiente a un <strong>nivel alto de calidad</strong>. El recurso sobresale por su capacidad para apoyar la comprensión visual de las fracciones equivalentes, pues utiliza representaciones gráficas que favorecen la relación entre parte-todo, comparación y equivalencia. También se destaca en retroalimentación, claridad comunicativa y pertinencia para el aprendizaje conceptual.</p>
-            <p>Como oportunidad de mejora, se identifica la necesidad de fortalecer la <strong>accesibilidad</strong> y complementar el recurso con <strong>actividades manipulativas</strong>. El juego puede generar aciertos por ensayo y error si no se acompaña de preguntas orientadoras; por ello, se recomienda articularlo con la actividad <strong>"La pizzería de las fracciones"</strong>, donde los estudiantes representen fracciones equivalentes con material concreto y expliquen oralmente sus procedimientos.</p>
+        <!-- ¿Qué modelo es mejor? -->
+        <div class="card" style="background: #fef9e6; border: 2px solid #ffcc00;">
+            <h2>🏆 ¿Cuál modelo recomiendo para mi contexto?</h2>
+            <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 4rem;">🏅</div>
+                <div>
+                    <h3 style="color: #003366; margin: 0; border: none;">Modelo EC-RED Matemáticas</h3>
+                    <p style="font-size:1.1rem; margin: 0.3rem 0 0 0;"><strong>¿Por qué?</strong></p>
+                    <ul style="padding-left:1.2rem; margin: 0.3rem 0;">
+                        <li>✅ Es <strong>práctico</strong> y fácil de aplicar por el docente</li>
+                        <li>✅ Considera la <strong>conectividad</strong> y el contexto real</li>
+                        <li>✅ Evalúa <strong>pedagogía + tecnología + comunicación + contexto</strong></li>
+                        <li>✅ Da <strong>resultados claros</strong> con escala de 100 puntos</li>
+                        <li>✅ Orienta al docente sobre <strong>qué mejorar</strong> en el recurso</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <!-- Respuesta a interrogantes -->
+        <!-- Plan de acción -->
         <div class="card">
-            <h2>Respuesta a los interrogantes orientadores</h2>
-
-            <h3>7.1 ¿De qué manera el modelo rediseñado permite realizar una adecuada evaluación de un RED?</h3>
-            <p>El modelo rediseñado permite una evaluación adecuada porque <strong>integra criterios pedagógicos, técnicos, comunicacionales y contextuales</strong>. A diferencia de una revisión centrada solo en la apariencia del recurso, el modelo EC-RED Matemáticas analiza si el RED responde al currículo, si presenta contenidos matemáticos correctos, si promueve aprendizaje activo, si ofrece retroalimentación, si es usable, si comunica con claridad, si incluye condiciones de accesibilidad y si puede utilizarse en escenarios con conectividad limitada.</p>
-            <p>Además, la <strong>ponderación de criterios</strong> permite asignar mayor peso a los aspectos que inciden directamente en el aprendizaje. Por ejemplo, la coherencia curricular, la exactitud del contenido, la estrategia didáctica y la accesibilidad tienen un peso relevante, porque de ellos depende que el recurso pueda ser usado de manera significativa y no solo como entretenimiento digital.</p>
-
-            <h3>7.2 ¿Qué ventajas tiene el modelo rediseñado frente a otros modelos existentes?</h3>
-            <p>La principal ventaja del modelo rediseñado es su <strong>contextualización</strong>. CODA, LORI, MERLOT y UNE 71362 ofrecen criterios valiosos, pero no siempre responden de forma directa a las condiciones de la básica primaria en contextos con conectividad variable. El modelo EC-RED Matemáticas adapta dichos aportes a las necesidades de estudiantes de grado cuarto, incorpora una escala ponderada de fácil aplicación y agrega criterios relacionados con <strong>baja conectividad, mediación docente, claridad comunicativa e inclusión</strong>.</p>
-            <p>Otra ventaja es su <strong>utilidad práctica para el docente</strong>. El instrumento no solo entrega un puntaje final, sino que orienta decisiones pedagógicas: si conviene usar el recurso, cómo debe acompañarse, qué mediaciones son necesarias y qué aspectos deben mejorarse antes de su implementación.</p>
-
-            <h3>7.3 ¿Qué elementos técnicos, pedagógicos y comunicacionales deben ser mejorados en el modelo rediseñado?</h3>
-            <p>En cuanto al modelo, se recomienda fortalecer su <strong>validación mediante revisión por pares docentes</strong>, aplicación piloto con estudiantes y ajuste de descriptores para que cada puntuación sea más precisa. También podría incluirse una sección para <strong>evidencias de uso</strong>, como capturas, observaciones de clase, respuestas de estudiantes y registros de aprendizaje.</p>
-            <p>En cuanto a los RED evaluados, los principales elementos técnicos por mejorar son la <strong>accesibilidad</strong>, la posibilidad de <strong>uso offline o semioffline</strong>, la reducción de publicidad y la compatibilidad con diferentes dispositivos. En la dimensión pedagógica, se requiere mayor vinculación con <strong>problemas contextualizados, actividades manipulativas, explicación de estrategias y evaluación formativa</strong>. En la dimensión comunicacional, se recomienda fortalecer <strong>instrucciones claras, mensajes breves, lenguaje adecuado para primaria, apoyos visuales comprensibles y retroalimentación que explique el error</strong>, no solo indique si la respuesta es correcta o incorrecta.</p>
-        </div>
-
-        <!-- Plan de mejora -->
-        <div class="card">
-            <h2>Plan de mejora y orientaciones para el portafolio web</h2>
-            <p>Para actualizar el portafolio web se recomienda crear o completar la página <strong>"Rediseño"</strong> con la propuesta del modelo EC-RED Matemáticas, incluyendo título, referentes, problemática, criterios, escala y metodología. También se debe publicar la presentación del informe en la página <strong>"Aplicación de modelo de evaluación rediseñado"</strong>, con los resultados de la aplicación a los dos RED y las respuestas a los interrogantes orientadores.</p>
-
-            <table>
-                <thead><tr><th>Página del portafolio</th><th>Contenido que debe alojarse</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Rediseño</strong></td><td>Título del modelo, referentes, problemática, criterios, escala, metodología e instrumento EC-RED Matemáticas.</td></tr>
-                    <tr><td><strong>Aplicación de modelo de evaluación rediseñado</strong></td><td>Presentación del informe, resultados de la aplicación a Mundo Primaria y Árbol ABC, análisis comparativo y conclusiones.</td></tr>
-                    <tr><td><strong>Referencias</strong></td><td>Fuentes utilizadas en APA 7 y enlace a los RED evaluados.</td></tr>
-                </tbody>
-            </table>
+            <h2>📝 Plan de acción: ¿Cómo usar este modelo?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                <div style="background: #e3f2fd; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">1️⃣</div>
+                    <h4 style="margin: 0.3rem 0; color: #0d47a1;">Identificar</h4>
+                    <p style="font-size:0.85rem; margin:0;">¿Qué recurso voy a evaluar? ¿Para qué tema de Matemáticas?</p>
+                </div>
+                <div style="background: #e8f5e9; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">2️⃣</div>
+                    <h4 style="margin: 0.3rem 0; color: #1b5e20;">Evaluar</h4>
+                    <p style="font-size:0.85rem; margin:0;">Aplico los 12 criterios, asigno puntaje de 1 a 5 y calculo el total.</p>
+                </div>
+                <div style="background: #fff3e0; padding: 1rem; border-radius: 12px; text-align: center;">
+                    <div style="font-size: 2.5rem;">3️⃣</div>
+                    <h4 style="margin: 0.3rem 0; color: #e65100;">Decidir</h4>
+                    <p style="font-size:0.85rem; margin:0;">¿Lo uso tal cual? ¿Lo adapto? ¿Lo complemento con actividades?</p>
+                </div>
+            </div>
         </div>
     </div>
 
